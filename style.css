@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#score{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    font-family: 'Style Script', cursive;
+    font-size: 50px;
+    font-weight: 900;
+}
+#highScore{
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+    top: 90px;
+    font-family: 'Style Script', cursive;
+    right: 60px;
+}
+#board{
+    background:linear-gradient(#D6E6F2,white,#D6E6F2) ;
+    border-radius: 20px;
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    border: 10px double rgb(14, 13, 13);
+}
+.head{
+    background-color: rgb(15, 41, 57);
+    border: 2px solid black;
+    transform: scale(1.02);
+    border-radius: 9px;
+    animation: head 0.3s infinite;
+    box-shadow: 2px 1px 10px rgb(92, 240, 92);
+}
+
+
+.snake{
+    background-color: black;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background-color: cadetblue;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
